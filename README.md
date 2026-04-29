@@ -5,6 +5,7 @@
 Este projeto implementa um sistema de reservas de quartos de hotel em Java, garantindo que um mesmo quarto não seja reservado por mais de um cliente no mesmo período.
 O desenvolvimento segue a prática de TDD (Test Driven Development), ou seja, cada funcionalidade é criada a partir de testes automatizados.
 
+
 🏗️ Estrutura do Sistema
 
 Entidades principais
@@ -16,6 +17,7 @@ Reserva → representa a alocação de um quarto para um cliente em um intervalo
 StatusReserva → enum que define se a reserva está ATIVA ou CANCELADA.
 
 SistemaReserva → gerencia todas as reservas, aplicando as regras de negócio.
+
 
 📋 Regras de Negócio
 
@@ -31,6 +33,7 @@ Reservas canceladas não bloqueiam o período.
 
 O sistema deve validar disponibilidade de quartos antes de confirmar a reserva.
 
+
 🔄 Abordagem com TDD
 
 O ciclo de desenvolvimento segue três passos:
@@ -40,6 +43,7 @@ Red → escrever um teste que falha.
 Green → implementar o mínimo necessário para o teste passar.
 
 Refactor → melhorar o código mantendo os testes passando.
+
 
 🧪 Cenários de Teste
 
@@ -55,17 +59,15 @@ Permitir reservas em períodos distintos.
 
 Cancelamento deve liberar o quarto.
 
+
 📂 Estrutura de Pastas
 
-Código
-src/
- ├── main/java/
- │    ├── Quarto.java
- │    ├── Reserva.java
- │    ├── StatusReserva.java
- │    └── SistemaReserva.java
- └── test/java/
-      └── SistemaReservaTest.java
+<img width="334" height="192" alt="image" src="https://github.com/user-attachments/assets/541ea6e2-4193-4003-83ae-4a7b919ecd82" />
+
+
+
+
+
 
 🚀 Como executar no IntelliJ IDEA
 
@@ -84,6 +86,7 @@ Vá em File > Project Structure > Libraries > Add JUnit.
 Clique com o botão direito no arquivo de teste → Run 'SistemaReservaTest'.
 
 O IntelliJ mostrará os testes passando (verde) ou falhando (vermelho).
+
 
 📊 Conceitos aplicados
 
